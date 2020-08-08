@@ -9,16 +9,15 @@ namespace Pluton.Utilities
 {
     public static class PTools
     {
-
         [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
         static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath, RecycleFlags dwFlags);
-        enum RecycleFlags : uint
+        
+        private enum RecycleFlags : uint
         {
             SHRB_NOCONFIRMATION = 0x00000001,
             SHRB_NOPROGRESSUI = 0x00000002,
             SHRB_NOSOUND = 0x00000004
         }
-
 
         /// <summary> 
         /// Shutdown the computer. 

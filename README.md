@@ -1,11 +1,21 @@
-# Pluton
-
-![Pluton Logo](/Art/Pluton.png)
+<div align="center">
+<img width=15% src="/Art/Pluton.png">
+<br />
+<h1>Pluton</h1>
+<br/>
+<a href="https://github.com/Relickw-dev/Pluton/releases">
+   <img src="https://img.shields.io/github/downloads/Relickw-dev/Pluton/total.svg">
+</a>
+<a>
+	<img src="https://img.shields.io/github/forks/Relickw-dev/Pluton" />
+	<img src="https://img.shields.io/github/stars/Relickw-dev/Pluton" />
+</a>      
+</div>
 
 ### Process Class:
 
 ```c#
-Using Pluton.Utilities;
+using Pluton.Utilities;
 
 void Main()
 {
@@ -17,7 +27,7 @@ void Main()
 ### Console Window Class:
 
 ```c#
-Using Pluton.Utilities;
+using Pluton.Utilities;
 
 void Main()
 {
@@ -38,25 +48,25 @@ void Main()
 ### Tools Class:
 
 ```c#
-Using Pluton.Utilities;
+using Pluton.Utilities;
 
 void Main()
 {
    //SHUTDOWN THE COMPUTER
    PTools.Shutdown();
-   
+
    //RESTART THE COMPUTER
    PTools.Reboot();
 
    //MAKE A SCREENSHOT AND SAVE IT IN YOUR PROGRAM DIRECTORY.
    PTools.Screenshot();
-   
+
    //CLEAR SYSTEM TEMP
    PTools.ClearSystemTemp();
-   
+
    //CLEAR USER TEMP
    PTools.ClearUserTemp();
-   
+
    //CLEAR RECYCLE BIN
    PTools.ClearRecycleBin();
 
@@ -99,7 +109,7 @@ void Main()
    PAdministrativeTools.CMD(true);
 
    PAdministrativeTools.IEOptions(true);
-   
+
    PAdministrativeTools.ControlPanel(true);
 
    PAdministrativeTools.SystemProperties(true);
